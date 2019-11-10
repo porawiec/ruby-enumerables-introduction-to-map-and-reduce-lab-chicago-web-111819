@@ -52,10 +52,12 @@ end
 def reduce_to_all_true(source_array)
   row_index = 0
   while row_index < source_array.length do
-
+    if !source_array[row_index]
+      return false
+    end
     row_index +=1
   end
-  
+  return true
 end
 
 def reduce_to_any_true(source_array)
