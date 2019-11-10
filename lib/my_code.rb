@@ -20,7 +20,13 @@ def map_to_no_change(source_array)
 end
 
 def map_to_double(source_array)
-  
+  double_values = []
+  row_index = 0
+  while row_index < source_array.length do
+    negative_array.push(source_array[row_index] * -1)
+    row_index += 1
+  end
+  double_values
 end
 
 def map_to_square(source_array)
