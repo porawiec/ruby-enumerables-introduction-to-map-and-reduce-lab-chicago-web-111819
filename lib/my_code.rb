@@ -6,7 +6,7 @@ def map_to_negativize(source_array)
     negative_array.push(source_array[row_index] * -1)
     row_index += 1
   end
-  source_array
+  negative_array
 end
 
 def map_to_no_change(source_array)
