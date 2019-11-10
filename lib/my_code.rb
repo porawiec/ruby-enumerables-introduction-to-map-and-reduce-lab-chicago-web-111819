@@ -10,7 +10,13 @@ def map_to_negativize(source_array)
 end
 
 def map_to_no_change(source_array)
-  
+  no_change_names = []
+  row_index = 0
+  while row_index < source_array.length do
+    no_change_names.push(source_array[row_index])
+    row_index += 1
+  end
+  no_change_names
 end
 
 def map_to_double(source_array)
