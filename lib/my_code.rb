@@ -41,12 +41,12 @@ end
 
 
 def reduce_to_total(source_array, starting_point=0)
-  total = 0
-  while starting_point < source_array.length do
-    total += source_array[starting_point]
-    starting_point +=1
+  row_index = 0
+  while row_index < source_array.length do
+    starting_point += source_array[row_index]
+    row_index +=1
   end
-  total
+  starting_point
 end
 
 def reduce_to_all_true(source_array)
