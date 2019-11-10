@@ -30,7 +30,13 @@ def map_to_double(source_array)
 end
 
 def map_to_square(source_array)
-  
+  squared_values = []
+  row_index = 0
+  while row_index < source_array.length do
+    squared_values.push(source_array[row_index] * -1)
+    row_index += 1
+  end
+  squared_values
 end
 
 
