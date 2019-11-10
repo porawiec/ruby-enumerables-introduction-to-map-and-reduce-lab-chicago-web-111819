@@ -33,7 +33,7 @@ def map_to_square(source_array)
   squared_values = []
   row_index = 0
   while row_index < source_array.length do
-    squared_values.push(source_array[row_index] * -1)
+    squared_values.push(source_array[row_index] ** 2)
     row_index += 1
   end
   squared_values
